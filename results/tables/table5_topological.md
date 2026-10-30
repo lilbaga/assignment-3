@@ -1,0 +1,10 @@
+**Table 5. Topological ordering (Kahn): DAGs vs graphs with cycles**
+
+| Graph | V | E | Input | Avg time (µs) | Edge examinations | Is DAG | Vertices ordered | Order valid |
+|---|---|---|---|---|---|---|---|---|
+| Small | 10 | 30 | DAG | 0.42 | 60 | true | 10 | true |
+| Small | 10 | 30 | with cycles | 0.22 | 30 | false | 0 | n/a (cycle detected) |
+| Medium | 100 | 500 | DAG | 4.48 | 1000 | true | 100 | true |
+| Medium | 100 | 500 | with cycles | 1.20 | 510 | false | 3 | n/a (cycle detected) |
+| Large | 1000 | 5000 | DAG | 81.44 | 10000 | true | 1000 | true |
+| Large | 1000 | 5000 | with cycles | 15.44 | 5042 | false | 9 | n/a (cycle detected) |

@@ -1,0 +1,8 @@
+**Table 3. Kruskal on the Large graph (V=1000, E=5000) with different DSU variants**
+
+| DSU variant | Avg time (µs) | Parent-pointer hops in find | MST weight |
+|---|---|---|---|
+| naive (no optimizations) | 2634.90 | 608970 | 12002 |
+| path compression only | 1124.50 | 13420 | 12002 |
+| union by rank only | 1007.04 | 10979 | 12002 |
+| path compression + union by rank | 903.66 | 6709 | 12002 |
